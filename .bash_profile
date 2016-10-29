@@ -4,6 +4,9 @@ export PATH="$HOME/bin:$PATH";
 # Add `~./composer/bin` to the `$PATH`
 export PATH="~/.composer/vendor/bin:$PATH"
 
+# Add GNU
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.

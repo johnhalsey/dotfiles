@@ -12,14 +12,14 @@ brew upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install # https://www.gnu.org/software/coreutils
+brew install coreutils # https://www.gnu.org/software/coreutils
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils # https://joeyh.name/code/moreutils/
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils # https://www.gnu.org/software/findutils/
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names # https://www.gnu.org/software/sed/ 
+brew install gnu-sed --with-default-names # https://www.gnu.org/software/sed/
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
@@ -38,9 +38,16 @@ brew install wget --with-iri
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
+brew install homebrew/dupes/grep
+brew install homebrew/dupes/openssh
+brew install homebrew/dupes/screen
 
 # Install PHP
-brew install php70
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+brew unlink php56
+brew install homebrew/php/php70
 
 # Install MariaDB
 brew install mariadb
@@ -82,13 +89,13 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack # http://beyondgrep.com/
-brew install dark-mode # https://github.com/sindresorhus/dark-mode
+brew install dark-mode # c
 brew install git # https://git-scm.com/
 brew install git-lfs # https://github.com/github/git-lfs
 brew install imagemagick --with-webp # https://www.imagemagick.org/
 brew install lynx # http://lynx.invisible-island.net/
 brew install p7zip # http://p7zip.sourceforge.net/
-brew install pigz # http://www.zlib.net/pigz/ 
+brew install pigz # http://www.zlib.net/pigz/
 brew install pv # https://www.ivarch.com/programs/pv.shtml
 brew install rename # http://plasmasturm.org/code/rename/
 brew install speedtest_cli # https://github.com/sivel/speedtest-cli
