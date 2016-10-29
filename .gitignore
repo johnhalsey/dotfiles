@@ -1,3 +1,6 @@
+# Keep extras local
+.extras
+
 # Compiled Python files
 *.pyc
 
