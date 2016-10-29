@@ -38,10 +38,15 @@ brew install wget --with-iri
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
+
+# Install PHP
+brew install php70
+
+# Install MariaDB
+brew install mariadb
+
+# Install mas
+brew install mas # https://github.com/mas-cli/mas
 
 # Install font tools.
 brew tap bramstein/webfonttools # https://github.com/bramstein/homebrew-webfonttools
