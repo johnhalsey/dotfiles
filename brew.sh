@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
+# http://brewformulas.org/
+# http://brew.sh/
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -10,20 +12,20 @@ brew upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
+brew install # https://www.gnu.org/software/coreutils
 
 # Install some other useful utilities like `sponge`.
-brew install moreutils
+brew install moreutils # https://joeyh.name/code/moreutils/
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
+brew install findutils # https://www.gnu.org/software/findutils/
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed --with-default-names # https://www.gnu.org/software/sed/ 
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew tap homebrew/versions
-brew install bash-completion2
+brew tap homebrew/versions # https://github.com/Homebrew/homebrew-versions
+brew install bash-completion2 # https://github.com/Homebrew/homebrew-versions/blob/master/bash-completion2.rb
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
@@ -42,7 +44,7 @@ brew install homebrew/dupes/screen
 brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
+brew tap bramstein/webfonttools # https://github.com/bramstein/homebrew-webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
@@ -74,26 +76,23 @@ brew install xpdf
 brew install xz
 
 # Install other useful binaries.
-brew install ack
-brew install dark-mode
-#brew install exiv2
-brew install git
-brew install git-lfs
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
-brew install ssh-copy-id
-brew install testssl
-brew install tree
-brew install vbindiff
-brew install webkit2png
-brew install zopfli
+brew install ack # http://beyondgrep.com/
+brew install dark-mode # https://github.com/sindresorhus/dark-mode
+brew install git # https://git-scm.com/
+brew install git-lfs # https://github.com/github/git-lfs
+brew install imagemagick --with-webp # https://www.imagemagick.org/
+brew install lynx # http://lynx.invisible-island.net/
+brew install p7zip # http://p7zip.sourceforge.net/
+brew install pigz # http://www.zlib.net/pigz/ 
+brew install pv # https://www.ivarch.com/programs/pv.shtml
+brew install rename # http://plasmasturm.org/code/rename/
+brew install speedtest_cli # https://github.com/sivel/speedtest-cli
+brew install ssh-copy-id # https://www.openssh.com/
+brew install testssl # https://testssl.sh/
+brew install tree # http://mama.indstate.edu/users/ice/tree/
+brew install vbindiff # https://www.cjmweb.net/vbindiff/
+brew install webkit2png # http://www.paulhammond.org/webkit2png/
+brew install zopfli # https://github.com/google/zopfli
 
 # Remove outdated versions from the cellar.
 brew cleanup
