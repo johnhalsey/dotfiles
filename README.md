@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# Wayne's dotfile Fork of Mathias’s dotfiles
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
 
