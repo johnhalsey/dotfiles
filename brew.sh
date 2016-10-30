@@ -79,6 +79,7 @@ brew install tcptrace # http://www.tcptrace.org/
 brew install ucspi-tcp # `tcpserver` etc. https://cr.yp.to/ucspi-tcp.html
 
 # Install Tools.
+brew install ngrep # http://ngrep.sourceforge.net/
 brew install ack # http://beyondgrep.com/
 brew install dark-mode # c
 brew install git # https://git-scm.com/
