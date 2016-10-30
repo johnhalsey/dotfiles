@@ -61,39 +61,32 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
+# Install CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+brew install dns2tcp # http://www.hsc.fr/ressources/outils/dns2tcp/index.html.en
+brew install fcrackzip # http://oldhome.schmorp.de/marc/fcrackzip.html
+brew install foremost # http://foremost.sourceforge.net/
+brew install hashpump # https://github.com/bwall/HashPump
+brew install john # http://www.openwall.com/john/
+brew install knock # http://www.zeroflux.org/projects/knock
+brew install netpbm # http://netpbm.sourceforge.net/
+brew install nmap # https://nmap.org/
+brew install socat # http://www.desst-unreach.org/socat/
+brew install sqlmap # http://sqlmap.org/
+brew install tcpflow # https://github.com/simsong/tcpflow
+brew install tcpreplay # http://tcpreplay.appneta.com/
+brew install tcptrace # http://www.tcptrace.org/
+brew install ucspi-tcp # `tcpserver` etc. https://cr.yp.to/ucspi-tcp.html
 
-# Install other useful binaries.
+# Install Tools.
 brew install ack # http://beyondgrep.com/
 brew install dark-mode # c
 brew install git # https://git-scm.com/
 brew install git-lfs # https://github.com/github/git-lfs
+brew install bfg # https://rtyley.github.io/bfg-repo-cleaner/s
 brew install imagemagick --with-webp # https://www.imagemagick.org/
 brew install lynx # http://lynx.invisible-island.net/
+brew install xz # http://tukaani.org/xz/
 brew install p7zip # http://p7zip.sourceforge.net/
 brew install pigz # http://www.zlib.net/pigz/
 brew install pv # https://www.ivarch.com/programs/pv.shtml
@@ -103,6 +96,7 @@ brew install ssh-copy-id # https://www.openssh.com/
 brew install testssl # https://testssl.sh/
 brew install tree # http://mama.indstate.edu/users/ice/tree/
 brew install vbindiff # https://www.cjmweb.net/vbindiff/
+brew install pngcheck # http://www.libpng.org/pub/png/apps/pngcheck.html
 brew install webkit2png # http://www.paulhammond.org/webkit2png/
 brew install zopfli # https://github.com/google/zopfli
 
