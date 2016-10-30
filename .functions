@@ -217,6 +217,16 @@ function v() {
 	fi;
 }
 
+# `p` with no arguments opens the current directory in PHPStorm, otherwise
+# opens the given location
+function p() {
+	if [ $# -eq 0 ]; then
+		pstorm .;
+	else
+		pstorm "$@";
+	fi;
+}
+
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 function o() {
