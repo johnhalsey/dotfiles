@@ -19,6 +19,10 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+# Shortcut Hosts File
+alias hosts='~ && sudo subl /private/etc/hosts'
+alias shosts='~ && sudo subl /private/etc/hosts'
+alias nhosts='~ && sudo nano /private/etc/hosts'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
