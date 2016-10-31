@@ -107,6 +107,11 @@ function phpinfo() {
 	php -i "(command-line 'phpinfo()')"
 }
 
+# Show php module info
+function phpmodule() {
+	php --ri $1; echo "Exit Code: $?"
+}
+
 # Compare original and gzipped file size
 function gz() {
 	local origsize=$(wc -c < "$1");
