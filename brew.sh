@@ -43,7 +43,7 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 brew install nano
 
-# Install PHP
+# Install PHP https://github.com/Homebrew/homebrew-php
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
