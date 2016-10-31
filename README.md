@@ -1,4 +1,4 @@
-# Wayne's dotfile
+# Wayne's dotfiles
 
 ## Installation
 
