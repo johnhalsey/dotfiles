@@ -43,19 +43,6 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 brew install nano
 
-# Install PHP https://github.com/Homebrew/homebrew-php
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-brew unlink php56
-brew install homebrew/php/php70
-
-# Install WordPress Tools
-brew install homebrew/php/wp-cli
-
-# Install MariaDB
-brew install mariadb
-
 # Install mas
 brew install mas # https://github.com/mas-cli/mas
 
@@ -104,6 +91,20 @@ brew install vbindiff # https://www.cjmweb.net/vbindiff/
 brew install pngcheck # http://www.libpng.org/pub/png/apps/pngcheck.html
 brew install webkit2png # http://www.paulhammond.org/webkit2png/
 brew install zopfli # https://github.com/google/zopfli
+
+# Install PHP https://github.com/Homebrew/homebrew-php
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+brew unlink php56
+brew install homebrew/php/php70
+brew install homebrew/php/php70-imagick
+
+# Install WordPress Tools
+brew install homebrew/php/wp-cli
+
+# Install MariaDB
+brew install mariadb
 
 # Remove outdated versions from the cellar.
 brew cleanup
