@@ -50,6 +50,9 @@ brew tap homebrew/homebrew-php
 brew unlink php56
 brew install homebrew/php/php70
 
+# Install WordPress Tools
+brew install homebrew/php/wp-cli
+
 # Install MariaDB
 brew install mariadb
 
