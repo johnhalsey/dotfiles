@@ -1,14 +1,12 @@
-# Wayne's dotfile Fork of Mathias’s dotfiles
-
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+# Wayne's dotfile
 
 ## Installation
 
-**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
+**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use the settings unless you know what that entails. Use at your own risk!
 
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
+You can clone the repository wherever you want. (I keep it in `~/Code/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
 git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
@@ -65,7 +63,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-### Sensible macOS defaults
+### Custom macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
@@ -73,7 +71,7 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ./.macos
 ```
 
-### Install Homebrew formulae
+### Install Homebrew formulaes
 
 When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
 
@@ -81,19 +79,9 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ./brew.sh
 ```
 
-## Feedback
-
-Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
-
-## Author
-
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
-|---|
-| [Mathias Bynens](https://mathiasbynens.be/) |
-
 ## Thanks to…
 
+* @mathias for the orginal dotfiles repo [repo](https://github.com/mathiasbynens/dotfiles)
 * @ptb and [his _OS X Lion Setup_ repository](https://github.com/ptb/Mac-OS-X-Lion-Setup)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
 * [Chris Gerke](http://www.randomsquared.com/) and his [tutorial on creating an OS X SOE master image](http://chris-gerke.blogspot.com/2012/04/mac-osx-soe-master-image-day-7.html) + [_Insta_ repository](https://github.com/cgerke/Insta)
