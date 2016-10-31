@@ -102,6 +102,11 @@ function phpserver() {
 	php -S "${ip}:${port}";
 }
 
+# Show php info
+function phpinfo() {
+	php -i "(command-line 'phpinfo()')"
+}
+
 # Compare original and gzipped file size
 function gz() {
 	local origsize=$(wc -c < "$1");
