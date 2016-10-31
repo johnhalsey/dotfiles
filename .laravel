@@ -1,0 +1,31 @@
+function laranew {
+	PROJECTNAME=$1
+	sites
+	laravel new $PROJECTNAME
+	cd $PROJECTNAME
+	git init
+	git add .
+	git commit -m "Initial Commit"
+	open "http://$PROJECTNAME.dev"
+	p
+}
+
+# Lavarel Artisans
+alias art='php artisan'
+alias am='php artisan migrate'
+alias amr='php artisan migrate:rollback'
+alias ads='php artisan db:seed'
+alias adr='php artisan migrate:rollback && php artisan migrate && php artisan db:seed'
+
+# Laravel Homestead
+alias hs7='cd ~/homestead'
+alias hs7edit='sudo nano ~/.homestead/homestead.yaml'
+alias hs7u='cd ~/homestead && vagrant up'
+alias hs7ssh='cd ~/homestead && vagrant ssh'
+alias hs7h='cd ~/homestead && vagrant halt'
+alias hs7hu='cd ~/homestead && vagrant halt && vagrant up'
+alias hs7p='cd ~/homestead && vagrant provision'
+alias hsssh='homestead ssh'
+alias hsu='homestead up'
+alias hsh='homestead halt'
+alias hshu='homestead halt && homestead up'

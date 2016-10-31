@@ -1,0 +1,7 @@
+function wpnew {
+  PROJECTNAME=$1
+  mkdir -p $PROJECTNAME
+  cd $PROJECTNAME
+  wp core download
+  s
+}
