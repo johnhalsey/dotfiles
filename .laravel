@@ -13,19 +13,16 @@ function laranew {
 # Lavarel Artisans
 alias art='php artisan'
 alias am='php artisan migrate'
-alias amr='php artisan migrate:rollback'
-alias ads='php artisan db:seed'
-alias adr='php artisan migrate:rollback && php artisan migrate && php artisan db:seed'
+alias amf='php artisan migrate:fresh'
+alias adbs='php artisan db:seed'
+alias adbst='php artisan db:seed --class=TestDatabaseSeeder'
+
 
 # Laravel Homestead
-alias hs7='cd ~/homestead'
-alias hs7edit='sudo nano ~/.homestead/homestead.yaml'
-alias hs7u='cd ~/homestead && vagrant up'
-alias hs7ssh='cd ~/homestead && vagrant ssh'
-alias hs7h='cd ~/homestead && vagrant halt'
-alias hs7hu='cd ~/homestead && vagrant halt && vagrant up'
-alias hs7p='cd ~/homestead && vagrant provision'
-alias hsssh='homestead ssh'
-alias hsu='homestead up'
-alias hsh='homestead halt'
-alias hshu='homestead halt && homestead up'
+alias h6='cd ~ && cd Homestead'
+
+function homestead6() {
+    ( cd ~ && h6 && vagrant $* )
+}
+
+alias h6ssh='homestead6 ssh'
