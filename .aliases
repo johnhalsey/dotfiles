@@ -11,6 +11,7 @@ alias c='clear'
 
 # Shortcuts
 alias h='cd ~'
+alias c='clear'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias g="git"
@@ -18,9 +19,10 @@ alias h="history"
 alias j="jobs"
 
 # Shortcut Hosts File
-alias hosts='~ && sudo subl /private/etc/hosts'
-alias shosts='~ && sudo subl /private/etc/hosts'
-alias nhosts='~ && sudo nano /private/etc/hosts'
+alias hosts='h && nano /etc/hosts'
+alias shosts='h && sudo nano /etc/hosts'
+alias sites='h && cd Sites'
+alias code='h && cd Code'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
