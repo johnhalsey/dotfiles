@@ -19,10 +19,10 @@ alias adbst='php artisan db:seed --class=TestDatabaseSeeder'
 
 
 # Laravel Homestead
-alias h6='cd ~ && cd Homestead'
+alias h6='h && cd Homestead'
 
 function homestead6() {
-    ( cd ~ && h6 && vagrant $* )
+    ( h && h6 && vagrant $* )
 }
 
 alias h6ssh='homestead6 ssh'
