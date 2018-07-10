@@ -13,7 +13,6 @@ alias h='cd ~'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias g="git"
-alias h="history"
 alias j="jobs"
 
 # Shortcut Hosts File
