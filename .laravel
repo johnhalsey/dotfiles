@@ -16,6 +16,7 @@ alias am='php artisan migrate'
 alias amf='php artisan migrate:fresh'
 alias adbs='php artisan db:seed'
 alias adbst='php artisan db:seed --class=TestDatabaseSeeder'
+alias arl='php artisan route:list'
 
 
 # Laravel Homestead
