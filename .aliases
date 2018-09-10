@@ -20,6 +20,7 @@ alias hosts='h && nano /etc/hosts'
 alias shosts='h && sudo nano /etc/hosts'
 alias sites='h && cd Sites'
 alias code='h && cd Code'
+alias apps='h && cd apps'
 alias dotfiles='code && cd dotfiles'
 alias reset_dot='dotfiles && source bootstrap.sh'
 
