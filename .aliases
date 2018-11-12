@@ -23,6 +23,8 @@ alias code='h && cd Code'
 alias apps='h && cd apps'
 alias dotfiles='code && cd dotfiles'
 alias reset_dot='dotfiles && source bootstrap.sh'
+alias bash_profile ='h && nano .bash_profile'
+alias bash_reset ='h && source .bash_profile'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
