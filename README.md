@@ -8,14 +8,14 @@
 
 You can clone the repository wherever you want. (I keep it in `~/Code/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
-#### To create the symlink
+#### Follow these steps
 - `cd ~`
 - `mkdir dotfiles`
-- `ln -s /Users/john/Code/dotfiles /Users/john/dotfiles`
+- `ln -s /Users/{name}/Code/dotfiles /Users/{name}/dotfiles`
+- `git clone https://github.com/johnhalsey/dotfiles.git` <- or use via SSH if you can
+- `cd dotfiles`
+- `./bootstrap.sh`
 
-```bash
-git clone https://github.com/johnhalsey/dotfiles.git && cd dotfiles && ./bootstrap.sh
-```
 
 To update, `cd` into your local `dotfiles` repository and then:
 
