@@ -28,6 +28,10 @@ alias mysql-down='brew services stop mysql@5.7'
 alias valet-up='valet start && mysql-up'
 alias valet-down='mysql-down && valet stop'
 
+# NPM
+alias ndev="npm run dev"npm run development"
+alias nwatch="npm run development -- --watch"
+
 # Laravel Homestead
 alias h6='h && cd Homestead'
 
