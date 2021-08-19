@@ -27,6 +27,10 @@ alias reset_dot='dotfiles && source bootstrap.sh'
 alias bp='h && nano .extra'
 alias br='h && source .extra'
 
+#GIT
+alias gpull='git pull origin'
+alias gpush='git push origin'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
