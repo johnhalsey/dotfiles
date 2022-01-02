@@ -29,7 +29,7 @@ alias valet-up='valet start && mysql-up'
 alias valet-down='mysql-down && valet stop'
 
 # NPM
-alias ndev="npm run dev"npm run development"
+alias ndev="npm run development"
 alias nwatch="npm run development -- --watch"
 
 # Laravel Homestead
