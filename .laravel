@@ -17,6 +17,7 @@ alias amf='php artisan migrate:fresh'
 alias adbs='php artisan db:seed'
 alias adbst='php artisan db:seed --class=TestDatabaseSeeder'
 alias arl='php artisan route:list'
+alias atestf='php artisan test --filter'
 
 # PHPUnit
 alias test='phpunit'
