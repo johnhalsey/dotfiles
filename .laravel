@@ -18,14 +18,15 @@ alias adbs='php artisan db:seed'
 alias adbst='php artisan db:seed --class=TestDatabaseSeeder'
 alias arl='php artisan route:list'
 alias atestf='php artisan test --filter'
+alias aclear-all='art cache:clear && art config:clear && art route:clear && art view:clear'
 
 # PHPUnit
 alias test='phpunit'
 alias test-coverage='phpunit --coverage-html coverage'
 
 # Valet & Assoc Services
-alias mysql-up='brew services start mysql@5.7'
-alias mysql-down='brew services stop mysql@5.7'
+alias mysql-up='arm brew services start mysql@5.7'
+alias mysql-down='arm brew services stop mysql@5.7'
 alias valet-up='valet start && mysql-up'
 alias valet-down='mysql-down && valet stop'
 
